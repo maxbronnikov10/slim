@@ -1,0 +1,60 @@
+.carousel
+    margin-top: 50px
+    padding: 30px 0
+    background-color: #000
+    position: relative
+
+    height: calc( 100vh - 210px)
+    &__wrapper
+        height: 100%
+        overflow: hidden
+        display: flex
+
+    &__video
+        width: 100%
+        height: 100%
+        // &-fromLeft
+        //     transform: translateX(-100%)
+        // &-toRight
+        //     transform: translateX(-100%)
+        //     transition: .5s all
+        // &-fromRight
+        //     transform: translateX(100%)
+        // &-toLeft
+        //     transform: translateX(0%)
+        //     transition: .5s all
+        &-order
+            transform: translateX(-200%)
+        &-fromLeft
+            transition: 1s all
+            transform: translateX(-100%)
+        &-right
+            transition: 1s all
+            transform: translateX(100%)
+        &-left
+            transition: 1s all
+            transform: translateX(-100%)
+
+    &__arrow
+        color: #fff
+        padding: 0 5px
+        background-color: rgba(95, 95, 95, 0.5)
+        transition: .5s all
+        width: 25px
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 30px
+        position: absolute
+        cursor: pointer
+        &:hover
+            background-color: rgba(95, 95, 95, 0.3)
+        &-left
+            left: 10vh
+            top: 40vh
+        &-right
+            right: 10vh
+            top: 40vh
+        svg
+            width: 25px
+            height: 25px
