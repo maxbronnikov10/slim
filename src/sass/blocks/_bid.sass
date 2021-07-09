@@ -1,24 +1,80 @@
 .bid
     margin-top: 40px
+    &__wrapper
+
+        margin-top: 40px
+        display: grid
+        grid-template: auto / repeat(2, 1fr)
+        column-gap: 30px
+
+    .input-requirements
+        position: absolute
+        top: 50px
+        list-style-type: none
+        width: 100%
+        margin: 0
+        padding: 0
+        z-index: -1
+        transition: .5s all
+        li
+            margin-left: 10px
+            font-size: 12px
+        &-active
+            top: 90px
+    .valid
+        color: green
+    .invalid
+        color: red
     &__title
         background-color: #000
         color: #fff
         text-align: center
         padding: 10px 0
     &__form
-        margin-top: 20px
         display: flex
         flex-direction: column
         justify-content: space-between
-        height: 250px
-        label
-            font-size: 16px
-            width: 100%
-            span
-                display: block
-                color: #959595
-            input
-                padding: 15px 18px 18px
-                width: 100%
+
         input[type="submit"]
             width: 180px
+            margin-top: 20px
+    &__label
+        position: relative
+        font-size: 16px
+        width: 100%
+        span
+            display: block
+            color: #959595
+            text-transform: lowercase
+            &:first-letter
+                text-transform: uppercase
+        input
+            padding: 15px 18px 18px
+            width: 100%
+        &-active
+            height: 120px
+            &:is([for="text"])
+                height: 150px
+        &:is([for="text"])
+            height: 120px
+            textarea
+                width: 100%
+                height: 80%
+                resize: none
+                padding: 18px
+                font-size: 13px
+            .input__requirements
+                &-active
+                    top: 300px
+    &__policy
+        font-size: 14px
+        line-height: 14px
+        display: flex
+        input
+            margin-right: 10px
+            display: flex
+            align-content: flex-start
+        span
+            a
+                color: blue
+                text-decoration: underline

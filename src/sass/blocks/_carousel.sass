@@ -4,7 +4,7 @@
     background-color: #000
     position: relative
 
-    height: calc( 100vh - 210px)
+    height: calc( 100vh - 150px)
     &__wrapper
         height: 100%
         overflow: hidden
@@ -13,16 +13,6 @@
     &__video
         width: 100%
         height: 100%
-        // &-fromLeft
-        //     transform: translateX(-100%)
-        // &-toRight
-        //     transform: translateX(-100%)
-        //     transition: .5s all
-        // &-fromRight
-        //     transform: translateX(100%)
-        // &-toLeft
-        //     transform: translateX(0%)
-        //     transition: .5s all
         &-order
             transform: translateX(-200%)
         &-fromLeft
@@ -58,3 +48,11 @@
         svg
             width: 25px
             height: 25px
+    .btn
+        position: absolute
+        top: 85%
+        left: 50%
+        transform: translateX(-50%)
+        width: 200px
+        &:hover
+            text-decoration: none

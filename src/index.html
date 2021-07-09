@@ -55,46 +55,12 @@
                     <li class="menu__item">
                         <a href="" class="menu__link">портфолио</a>
                     </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">контакты</a>
+                    </li>
                 </ul>
-                <div class="menu__additional">
-                    <a class="menu__search" href=""><svg aria-hidden="true" focusable="false" data-prefix="fas"
-                            data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="#fff"
-                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
-                            </path>
-                        </svg>
-                    </a>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
             </nav>
         </div>
-        <div class="header__info">
-            <div class="header__info-close">
-                <div class="header__info-cross">
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div class="header__info-logo">
-                <img src="icons/logo-black.jpg" alt="logo">
-            </div>
-            <div class="header__info-wrapper">
-                <address class="header__info-address">Москва, ул. Привольная 9</address>
-                <div class="header__info-links">
-                    <a href="tel:+74951062804" class="header__info-link">8 (495) 106-28-04</a>
-                    <a href="tel:+79269515652" class="header__info-link">8 (926) 951-56-52</a>
-                </div>
-                <div class="header__info-email"><a href="mail:info@slimproduction.ru">info@slimproduction.ru</a></div>
-                <div class="header__info-social"><a href="instagram.com/slimproductionvideo/">INSTAGRAM</a></div>
-            </div>
-        </div>
-        <div class="overlay"></div>
     </header>
     <section class="carousel">
         <div class="container">
@@ -120,6 +86,7 @@
                     </path>
                 </svg>
             </div>
+            <a id="toForm" href="#form" class="btn">Заказать ролик</a>
         </div>
     </section>
     <section class="production">
@@ -180,19 +147,33 @@
             </div>
         </div>
     </section>
-    <section class="bid">
+    <section id="form" class="bid">
         <h2 class="bid__title">НУЖНА СЪЁМКА - ПРОСТО ОСТАВЬ ЗАЯВКУ</h2>
         <div class="container">
             <form class="bid__form" action="">
-                <label for="name"><span>Имя</span>
-                    <input type="text" name="name">
+                <label for="name" class="bid__label"><span>Имя</span>
+                    <input required type="text" name="name" id="name" type="text" min="2" max="100">
+                    <ul class="input-requirements">
+                        <li>*Не менее двух символов</li>
+                        <li>*Должны быть только буквы</li>
+                    </ul>
                 </label>
 
-                <label for="phone"><span>Телефон</span>
-                    <input type="text" name="phone">
+                <label for="phone" class="bid__label"><span>Телефон</span>
+                    <input type="text" name="phone" required name="phone" id="phone" min="11" max="30">
+                    <ul class="input-requirements">
+                        <li>*Не менее одиннадцати символов</li>
+                        <li>*Должны быть только цифры</li>
+                    </ul>
                 </label>
+                <div class="bid__policy">
+                    <input required type="checkbox">
+                    <span>Я согласен(а) с <a target="_blank" href="policy.html">политикой
+                            конфиденциальности</a></span>
+                </div>
+                <input class="btn" type="submit" value="Отправить" id="submit">
 
-                <input class="btn" type="submit" value="Отправить">
+
             </form>
         </div>
     </section>
@@ -206,13 +187,19 @@
                 <a href="tel:+74951062804" class="footer__link">8 (495) 106-28-04</a>
                 <a href="tel:+79269515652" class="footer__link">8 (926) 951-56-52</a>
             </div>
-            <address class="footer__address">Москва, ул. Привольная 9</address>
-            <a href="mail:info@slimproduction.ru" class="footer__email">
+            <address class="footer__address">г. Москва, Малая Бронная 13</address>
+            <a href="mailto:info@slimproduction.ru" class="footer__email">
                 info@slimproduction.ru</a>
         </div>
     </footer>
-    <a href="#up" class="pageup pageup-hidden pageup-none">
-        подняться вверх <span>></span>
+    <a class="pageup pageup-hidden pageup-none">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-up"
+            class="svg-inline--fa fa-chevron-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="#000"
+                d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z">
+            </path>
+        </svg>
     </a>
     <script src="js/script.js"></script>
 </body>
