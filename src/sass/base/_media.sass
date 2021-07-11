@@ -7,15 +7,49 @@
             &__link
                 &:after
                     top: 100%
+    .about
+        &__wrapper
+            grid-template: auto/repeat(auto-fill, minmax(340px, auto))
+            row-gap: 10px
+    .packages
+        &__wrapper
+            grid-template: auto/repeat(auto-fill,minmax(320px,auto))
+    .choose
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, minmax(320px, auto))
+    .experience
+        &__wrapper
+            padding: 0 10px
     .bid
         &__form
             padding: 0 10px
+        &__text
+            padding-right: 10px
+    .promo
+        padding: 0 10px
+    .about
+        &__wrapper
+            padding: 0 10px
+    .contacts
+        &__wrapper
+            padding: 0 10px
+
 @media (max-width: 991px)
     .header
         .menu
             &__item
                 flex: 0 0 25%
                 margin-top: 10px
+    .contacts
+        &__wrapper
+            grid-template: auto / 1fr
+        &__address
+            margin-top: 20px
+    .experience
+        &__wrapper
+            margin-top: 20px
+            grid-template: auto/repeat(auto-fit,minmax(380px,auto))
+            row-gap: 20px
 @media (max-width: 767px)
     .header
         .menu
@@ -63,11 +97,19 @@
                     background-color: #000
             .hamburger
                 display: flex
-
     .production
         padding: 0 10px
         &__title
             font-size: 50px
+    .bid
+        &__wrapper
+            grid-template: auto/1fr
+            row-gap: 30px
+        &__text
+            padding: 0 10px
+    .choose
+        &__wrapper
+            grid-template-columns: repeat(auto-fit,minmax(280px,auto))
 @media ( max-width:  595px)
     .header
         .menu
@@ -75,9 +117,35 @@
                 height: 50px
                 padding: 2px
     .production
+        margin-bottom: 50px
         &__title
             font-size: 30px
+    .promo
+        margin-top: 90px
     .about
         &__wrapper
-            padding: 0 10px
             grid-template: auto/repeat(auto-fill,minmax(320px,auto))
+    .bid
+        margin-top: 0
+        &__title
+            padding: 0 10px
+        &__wrapper
+            margin-top: 20px
+    .packages
+        &__wrapper
+            grid-template: auto/repeat(auto-fill,minmax(300px,auto))
+    .footer
+        margin-top: 50px
+    .contacts
+        margin-top: 90px
+        &__wrapper
+            margin-top: 20px
+            margin-bottom: 20px
+    .choose
+        &__wrapper
+            margin-top: 20px
+    .experience
+        margin-top: 50px
+        padding-top: 30px
+        &__wrapper
+            grid-template: auto/repeat(auto-fit,minmax(300px,auto))

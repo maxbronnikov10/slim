@@ -59,6 +59,9 @@
                         <a href="contacts.html" class="menu__link">контакты</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span></span><span></span><span></span><span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -72,58 +75,6 @@
                 останетесь довольны результатом работы.
             </div>
             <video src="videos/video1.mp4" autoplay=true loop=true muted=true class="promo__video"></video>
-        </div>
-    </section>
-    <section class="bid">
-        <h2 class="bid__title">НУЖНА СЪЁМКА - ПРОСТО ОСТАВЬ ЗАЯВКУ</h2>
-        <div class="container">
-            <div class="bid__wrapper">
-                <form class="bid__form" action="">
-                    <label for="name" class="bid__label"><span>Имя</span>
-                        <input required type="text" name="name" id="name" type="text" min="2" max="100">
-                        <ul class="input-requirements">
-                            <li>*Не менее двух символов</li>
-                            <li>*Должны быть только буквы</li>
-                        </ul>
-                    </label>
-
-                    <label for="phone" class="bid__label"><span>Телефон</span>
-                        <input type="text" name="phone" required name="phone" id="phone" min="11" max="30">
-                        <ul class="input-requirements">
-                            <li>*Не менее одиннадцати символов</li>
-                            <li>*Должны быть только цифры</li>
-                        </ul>
-                    </label>
-                    <label class="bid__label" for="email">
-                        <span>E-MAIL</span>
-                        <input required id="email" name="email" type="email" min="6" max="100">
-                        <ul class="input-requirements">
-                            <li>*Не менее пяти символов</li>
-                            <li>*Email должен соответствовать шаблону-*@*.*</li>
-                        </ul>
-                    </label>
-                    <label for="text" class="bid__label">
-                        <span>КОММЕНТАРИЙ</span>
-
-                        <textarea id="text" name="text"></textarea>
-                        <ul class="input-requirements">
-                            <li>*Поле не обязательно</li>
-                        </ul>
-                    </label>
-                    <div class="bid__policy">
-                        <input required type="checkbox">
-                        <span>Я согласен(а) с <a target="_blank" href="policy.html">политикой
-                                конфиденциальности</a></span>
-                    </div>
-                    <input class="btn" type="submit" value="Отправить" id="submit">
-                </form>
-                <div class="bid__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid in, eveniet, sequi id
-                    quaerat quibusdam consectetur ad ducimus facere maiores commodi omnis, similique adipisci enim sit!
-                    Deleniti id reprehenderit eligendi consequuntur! Soluta id optio at aut iure expedita accusantium,
-                    similique molestiae consectetur, ut quos sunt provident distinctio, blanditiis sit.
-                </div>
-            </div>
         </div>
     </section>
     <section class="packages">
@@ -187,6 +138,59 @@
             </div>
         </div>
     </section>
+    <section class="bid">
+        <h2 class="bid__title">НУЖНА СЪЁМКА - ПРОСТО ОСТАВЬ ЗАЯВКУ</h2>
+        <div class="container">
+            <div class="bid__wrapper">
+                <form class="bid__form" action="">
+                    <label for="name" class="bid__label"><span>Имя</span>
+                        <input required type="text" name="name" id="name" type="text" min="2" max="100">
+                        <ul class="input-requirements">
+                            <li>*Не менее двух символов</li>
+                            <li>*Должны быть только буквы</li>
+                        </ul>
+                    </label>
+
+                    <label for="phone" class="bid__label"><span>Телефон</span>
+                        <input type="text" name="phone" required name="phone" id="phone" min="11" max="30">
+                        <ul class="input-requirements">
+                            <li>*Не менее одиннадцати символов</li>
+                            <li>*Должны быть только цифры</li>
+                        </ul>
+                    </label>
+                    <label class="bid__label" for="email">
+                        <span>E-MAIL</span>
+                        <input required id="email" name="email" type="email" min="6" max="100">
+                        <ul class="input-requirements">
+                            <li>*Не менее пяти символов</li>
+                            <li>*Email должен соответствовать шаблону-*@*.*</li>
+                        </ul>
+                    </label>
+                    <label for="text" class="bid__label">
+                        <span>КОММЕНТАРИЙ</span>
+
+                        <textarea id="text" name="text"></textarea>
+                        <ul class="input-requirements">
+                            <li>*Поле не обязательно</li>
+                        </ul>
+                    </label>
+                    <div class="bid__policy">
+                        <input required type="checkbox">
+                        <span>Я согласен(на) с <a target="_blank" href="policy.html">политикой
+                                конфиденциальности</a></span>
+                    </div>
+                    <input class="btn" type="submit" value="Отправить" id="submit">
+                </form>
+                <div class="bid__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquid in, eveniet, sequi id
+                    quaerat quibusdam consectetur ad ducimus facere maiores commodi omnis, similique adipisci enim sit!
+                    Deleniti id reprehenderit eligendi consequuntur! Soluta id optio at aut iure expedita accusantium,
+                    similique molestiae consectetur, ut quos sunt provident distinctio, blanditiis sit.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about">
         <div class="container">
             <h2 class="about__main-title">как мы работаем</h2>
